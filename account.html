@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Account</title>
+</head>
+
+<body class="font-sans">
+
+    <!-- Top Black Bar -->
+    <div class="bg-black text-white text-sm py-3 px-5 md:px-10 flex flex-col md:flex-row items-center justify-between">
+
+        <!-- Left spacer for center text alignment on desktop -->
+        <div class="flex-1 hidden md:block"></div>
+
+        <!-- Center Text -->
+        <div class="flex items-center gap-2 justify-center md:justify-start mb-2 md:mb-0">
+            <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+            <a href="#" class="font-bold underline">ShopNow</a>
+        </div>
+
+        <!-- Right Language Dropdown -->
+        <div class="flex-1 flex justify-center md:justify-end items-center">
+            <select
+                class="bg-transparent text-white text-sm border border-gray-600 rounded px-2 py-1 outline-none cursor-pointer">
+                <option value="en" class="text-black">English</option>
+                <option value="ur" class="text-black">Urdu</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- Navbar -->
+    <nav class="flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-5 border-b border-gray-200">
+
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold tracking-wider mb-4 md:mb-0">Exclusive</h1>
+
+        <!-- Menu Links -->
+        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-10 text-base font-medium items-center">
+            <li class="border-b md:border-b-0 border-black cursor-pointer">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="hover:underline cursor-pointer text-gray-600">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li class="hover:underline cursor-pointer text-gray-600">
+                <a href="about.html">About</a>
+            </li>
+            <li class="hover:underline cursor-pointer text-gray-600">
+                <a href="signup.html">Sign Up</a>
+            </li>
+        </ul>
+
+        <!-- Search & Cart -->
+        <div
+            class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mt-4 md:mt-0 w-full md:w-auto">
+
+            <!-- Search Box -->
+            <div class="relative flex items-center bg-gray-100 px-3 py-2 rounded w-full md:w-60">
+                <input type="text" placeholder="What are you looking for?"
+                    class="bg-transparent text-sm outline-none w-full">
+                <img src="images/Component 2 (1).png" alt="wishlist" class="w-6 h-6 bg-gray-100 cursor-pointer ml-2">
+            </div>
+
+            <!-- Cart Icon -->
+            <div class="flex items-center">
+                <a href="wishlist.html">
+                    <img src="images/Frame 551.png" alt="cart" class="h-15 w-15 cursor-pointer">
+
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+    <div class="container mx-auto px-4 py-8 max-w-7xl">
+
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4">
+            <nav class="text-sm text-gray-500">
+                <span class="hover:text-black cursor-pointer">Home</span>
+                <span class="mx-2">/</span>
+                <span class="text-black font-semibold">My Account</span>
+            </nav>
+            <div class="text-sm">
+                Welcome! <span class="text-red-500 font-medium">Md Rimel</span>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+
+            <aside class="w-full lg:w-1/4 space-y-8">
+                <div>
+                    <h3 class="font-bold text-black mb-4">Manage My Account</h3>
+                    <ul class="pl-4 space-y-3 text-gray-500">
+                        <li class="text-red-500 cursor-pointer">My Profile</li>
+                        <li class="hover:text-red-500 cursor-pointer">Address Book</li>
+                        <li class="hover:text-red-500 cursor-pointer">My Payment Options</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black mb-4">My Orders</h3>
+                    <ul class="pl-4 space-y-3 text-gray-500">
+                        <li class="hover:text-red-500 cursor-pointer">My Returns</li>
+                        <li class="hover:text-red-500 cursor-pointer">My Cancellations</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold text-black">My WishList</h3>
+                </div>
+            </aside>
+
+            <main
+                class="w-full lg:w-3/4 bg-white p-6 md:p-10 rounded shadow-[0_0_10px_rgba(0,0,0,0.05)] border border-gray-50">
+                <h2 class="text-red-500 font-bold text-xl mb-8">Edit Your Profile</h2>
+
+                <form action="#" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="block text-black font-medium">First Name</label>
+                            <input type="text" placeholder="Md"
+                                class="w-full bg-gray-100 p-4 rounded outline-none focus:ring-1 focus:ring-red-400">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-black font-medium">Last Name</label>
+                            <input type="text" placeholder="Rimel"
+                                class="w-full bg-gray-100 p-4 rounded outline-none focus:ring-1 focus:ring-red-400">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="space-y-2">
+                            <label class="block text-black font-medium">Email</label>
+                            <input type="email" placeholder="rimel1111@gmail.com"
+                                class="w-full bg-gray-100 p-4 rounded outline-none focus:ring-1 focus:ring-red-400">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-black font-medium">Address</label>
+                            <input type="text" placeholder="Kingston, 5236, United State"
+                                class="w-full bg-gray-100 p-4 rounded outline-none focus:ring-1 focus:ring-red-400">
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 pt-4">
+                        <label class="block text-black font-medium">Password Changes</label>
+                        <input type="password" placeholder="Current Password"
+                            class="w-full bg-gray-100 p-4 rounded outline-none focus:ring-1 focus:ring-red-400">
+                        <input type="password" placeholder="New Password"
+                            class="w-full bg-gray-100 p-4 rounded outline-none focus:ring-1 focus:ring-red-400">
+                        <input type="password" placeholder="Confirm New Password"
+                            class="w-full bg-gray-100 p-4 rounded outline-none focus:ring-1 focus:ring-red-400">
+                    </div>
+
+                    <div class="flex justify-end items-center gap-8 pt-6">
+                        <button type="button" class="text-black hover:text-red-500 transition-colors">Cancel</button>
+                        <button type="submit"
+                            class="bg-[#DB4444] hover:bg-red-600 text-white px-12 py-4 rounded transition-colors font-medium">
+                            Save Changes
+                        </button>
+                    </div>
+                </form>
+            </main>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-16">
+
+            <!-- Main Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+                <!-- Subscribe -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Exclusive</h3>
+                    <p class="mb-1">Subscribe</p>
+                    <p class="text-sm text-gray-400 mb-4">Get 10% off your first order</p>
+
+                    <!-- Input with arrow inside -->
+                    <div class="relative max-w-sm">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full bg-transparent border border-gray-600 rounded-lg px-4 py-2 pr-10 text-sm placeholder-gray-500 outline-none" />
+                        <button class="absolute right-3 top-1/2 -translate-y-1/2 text-lg hover:text-gray-300">
+                            ➤
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <p class="text-sm text-gray-400 mb-1">111 Bijoy sarani, Dhaka</p>
+                    <p class="text-sm text-gray-400 mb-1">DH 1515, Bangladesh</p>
+                    <p class="text-sm text-gray-400 mb-1">exclusive@gmail.com</p>
+                    <p class="text-sm text-gray-400">+88015-88888-9999</p>
+                </div>
+
+                <!-- Account -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Account</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="hover:text-white cursor-pointer"> <a href="account.html"> My Account</a></li>
+                        <li class="hover:text-white cursor-pointer"> <a href="login.html"> Login / Register </a></li>
+                        <li class="hover:text-white cursor-pointer"> <a href="cart.html"> Cart</a></li>
+                        <li class="hover:text-white cursor-pointer"> <a href="wishlist.html"> Wishlist</a></li>
+                        <li class="hover:text-white cursor-pointer"> <a href="#"> Shop</a></li>
+                         <li class=" hover:text-white cursor-pointer ">  <a href="checkout.html"> Checkout</a> </li>
+
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Link</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="hover:text-white cursor-pointer">Privacy Policy</li>
+                        <li class="hover:text-white cursor-pointer">Terms Of Use</li>
+                        <li class="hover:text-white cursor-pointer">FAQ</li>
+                        <li class="hover:text-white cursor-pointer"> <a href="contact.html"> Contact</a> </li>
+                        <li>
+                            <a href="404.html" class="text-blue-500 underline">
+                                Go to Error Page
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Download App -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Download App</h3>
+                    <p class="text-xs text-gray-400 mb-4">
+                        Save $3 with App New User Only
+                    </p>
+
+                    <!-- QR + Store buttons -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 mb-6">
+
+                        <!-- QR -->
+                        <img src="images/Qr Code.png" class="w-24 h-24 object-contain" alt="QR Code" />
+
+                        <!-- Store Buttons -->
+                        <div class="flex flex-col gap-2">
+                            <img src="images/GooglePlay.png" class="h-10 w-auto object-contain" alt="Google Play" />
+                            <img src="images/download-appstore.png" class="h-10 w-auto object-contain"
+                                alt="App Store" />
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center gap-4">
+                        <a href="https://www.facebook.com">
+                            <img src="images/Icon-Facebook.png" class="w-5 h-5" alt="Facebook">
+                        </a>
+
+                        <a href="https://www.twitter.com">
+                            <img src="images/Group.png" class="w-6 h-6" alt="Twitter">
+                        </a>
+
+                        <a href="https://www.instagram.com">
+                            <img src="images/Group (1).png" class="w-5 h-5" alt="Instagram">
+                        </a>
+
+                        <a href="https://www.linkedin.com">
+                            <img src="images/Icon-Linkedin.png" class="w-6 h-6" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 mt-12 pt-6 text-center text-xs sm:text-sm text-gray-500">
+                © Copyright Exclusive 2026. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

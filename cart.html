@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Cart</title>
+</head>
+
+<body class="font-sans overflow-x-hidden">
+
+<!-- ================= TOP BAR ================= -->
+<div class="bg-black text-white text-sm py-3 px-5 md:px-10 flex flex-col md:flex-row items-center justify-between">
+  <div class="flex-1 hidden md:block"></div>
+
+  <div class="flex items-center gap-2 justify-center mb-2 md:mb-0">
+    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+    <a href="#" class="font-bold underline">ShopNow</a>
+  </div>
+
+  <div class="flex-1 flex justify-center md:justify-end items-center">
+    <select class="bg-transparent text-white text-sm border border-gray-600 rounded px-2 py-1 outline-none">
+      <option value="en" class="text-black">English</option>
+      <option value="ur" class="text-black">Urdu</option>
+    </select>
+  </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-5 border-b border-gray-200">
+
+  <h1 class="text-2xl font-bold tracking-wider mb-4 md:mb-0">Exclusive</h1>
+
+  <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-10 text-base font-medium items-center">
+    <li class="border-b md:border-b-0 border-black"><a href="index.html">Home</a></li>
+    <li class="text-gray-600 hover:underline"><a href="contact.html">Contact</a></li>
+    <li class="text-gray-600 hover:underline"><a href="about.html">About</a></li>
+    <li class="text-gray-600 hover:underline"><a href="signup.html">Sign Up</a></li>
+  </ul>
+
+  <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mt-4 md:mt-0 w-full md:w-auto">
+    <div class="relative flex items-center bg-gray-100 px-3 py-2 rounded w-full md:w-60">
+      <input type="text" placeholder="What are you looking for?" class="bg-transparent text-sm outline-none w-full">
+      <img src="images/Component 2 (1).png" class="w-6 h-6 ml-2 cursor-pointer">
+    </div>
+
+    <a href="wishlist.html">
+      <img src="images/Frame 551.png" class="w-8 h-8 cursor-pointer">
+    </a>
+  </div>
+</nav>
+
+<!-- ================= MAIN CONTAINER ================= -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-16">
+
+<!-- ================= CART HEADER ================= -->
+<div class="hidden md:grid grid-cols-4 gap-4 p-6 shadow-sm border rounded mb-8 font-medium">
+  <div>Product</div>
+  <div class="text-center">Price</div>
+  <div class="text-center">Quantity</div>
+  <div class="text-right">Subtotal</div>
+</div>
+
+<!-- ================= CART ITEMS ================= -->
+<div class="space-y-6 mb-10">
+
+  <!-- Item 1 -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center p-6 shadow-sm border rounded relative group">
+    <div class="flex items-center gap-4">
+      <button class="absolute -top-2 -left-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] opacity-0 group-hover:opacity-100 transition">✕</button>
+      <img src="images/Frame 613.png" class="w-12 h-12 object-contain">
+      <span class="font-medium">LCD Monitor</span>
+    </div>
+    <div class="flex justify-between md:justify-center"><span class="md:hidden text-gray-400">Price:</span> $650</div>
+    <div class="flex justify-between md:justify-center">
+      <span class="md:hidden text-gray-400">Quantity:</span>
+      <input type="number" value="1" class="w-16 border rounded p-2 text-center">
+    </div>
+    <div class="flex justify-between md:justify-end font-medium"><span class="md:hidden text-gray-400">Subtotal:</span> $650</div>
+  </div>
+
+  <!-- Item 2 -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center p-6 shadow-sm border rounded relative group">
+    <div class="flex items-center gap-4">
+      <button class="absolute -top-2 -left-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-[10px] opacity-0 group-hover:opacity-100 transition">✕</button>
+      <img src="images/Frame 614.png" class="w-12 h-12 object-contain">
+      <span class="font-medium">H1 Gamepad</span>
+    </div>
+    <div class="flex justify-between md:justify-center"><span class="md:hidden text-gray-400">Price:</span> $550</div>
+    <div class="flex justify-between md:justify-center">
+      <span class="md:hidden text-gray-400">Quantity:</span>
+      <input type="number" value="2" class="w-16 border rounded p-2 text-center">
+    </div>
+    <div class="flex justify-between md:justify-end font-medium"><span class="md:hidden text-gray-400">Subtotal:</span> $1100</div>
+  </div>
+
+</div>
+
+<!-- ================= ACTION BUTTONS ================= -->
+<div class="flex flex-col md:flex-row justify-between gap-4 mb-16">
+  <button class="border border-black px-10 py-4 rounded font-medium hover:bg-black hover:text-white transition">Return To Shop</button>
+  <button class="border border-black px-10 py-4 rounded font-medium hover:bg-black hover:text-white transition">Update Cart</button>
+</div>
+
+<!-- ================= COUPON + TOTAL ================= -->
+<div class="flex flex-col lg:flex-row justify-between items-start gap-12">
+
+  <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-1/2">
+    <input type="text" placeholder="Coupon Code" class="border border-black px-6 py-4 rounded flex-1">
+    <button class="bg-red-500 text-white px-10 py-4 rounded font-medium hover:bg-red-600">Apply Coupon</button>
+  </div>
+
+  <div class="w-full lg:w-[400px] border-2 border-black p-8 rounded space-y-4">
+    <h3 class="text-xl font-medium mb-6">Cart Total</h3>
+
+    <div class="flex justify-between border-b pb-4"><span>Subtotal:</span><span>$1750</span></div>
+    <div class="flex justify-between border-b pb-4"><span>Shipping:</span><span>Free</span></div>
+    <div class="flex justify-between font-medium"><span>Total:</span><span>$1750</span></div>
+
+    <button class="bg-red-500 text-white px-10 py-4 rounded font-medium hover:bg-red-600 w-full mt-4">
+      Process to checkout
+    </button>
+  </div>
+
+</div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="w-full bg-black text-white overflow-x-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-16">
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+      <!-- Subscribe -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Exclusive</h3>
+        <p>Subscribe</p>
+        <p class="text-sm text-gray-400 mb-4">Get 10% off your first order</p>
+
+        <div class="relative max-w-sm">
+          <input type="email" placeholder="Enter your email"
+            class="w-full bg-transparent border border-gray-600 rounded-lg px-4 py-2 pr-10 text-sm">
+          <button class="absolute right-3 top-1/2 -translate-y-1/2 text-lg">➤</button>
+        </div>
+      </div>
+
+      <!-- Support -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Support</h3>
+        <p class="text-sm text-gray-400">111 Bijoy sarani, Dhaka</p>
+        <p class="text-sm text-gray-400">DH 1515, Bangladesh</p>
+        <p class="text-sm text-gray-400">exclusive@gmail.com</p>
+        <p class="text-sm text-gray-400">+88015-88888-9999</p>
+      </div>
+
+      <!-- Account -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Account</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="account.html" class="hover:text-white">My Account</a></li>
+          <li><a href="login.html" class="hover:text-white">Login / Register</a></li>
+          <li><a href="cart.html" class="hover:text-white">Cart</a></li>
+          <li><a href="wishlist.html" class="hover:text-white">Wishlist</a></li>
+          <li><a href="index.html" class="hover:text-white">Shop</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Quick Link</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li class="hover:text-white">Privacy Policy</li>
+          <li class="hover:text-white">Terms Of Use</li>
+          <li class="hover:text-white">FAQ</li>
+          <li class="hover:text-white">Contact</li>
+        </ul>
+      </div>
+
+      <!-- App -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Download App</h3>
+        <p class="text-xs text-gray-400 mb-4">Save $3 with App New User Only</p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 mb-6">
+          <img src="images/Qr Code.png" class="w-24 h-24">
+          <div class="flex flex-col gap-2">
+            <img src="images/GooglePlay.png" class="h-10">
+            <img src="images/download-appstore.png" class="h-10">
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <img src="images/Icon-Facebook.png" class="w-5 h-5">
+          <img src="images/Group.png" class="w-6 h-6">
+          <img src="images/Group (1).png" class="w-5 h-5">
+          <img src="images/Icon-Linkedin.png" class="w-6 h-6">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 mt-12 pt-6 text-center text-sm text-gray-500">
+      © Copyright Exclusive 2026. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

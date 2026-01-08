@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sign up</title>
+</head>
+
+<body class="font-sans">
+
+    <!-- Top Black Bar -->
+    <div class="bg-black text-white text-sm py-3 px-5 md:px-10 flex flex-col md:flex-row items-center justify-between">
+
+        <!-- Left spacer for center text alignment on desktop -->
+        <div class="flex-1 hidden md:block"></div>
+
+        <!-- Center Text -->
+        <div class="flex items-center gap-2 justify-center md:justify-start mb-2 md:mb-0">
+            <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+            <a href="#" class="font-bold underline">ShopNow</a>
+        </div>
+
+        <!-- Right Language Dropdown -->
+        <div class="flex-1 flex justify-center md:justify-end items-center">
+            <select
+                class="bg-transparent text-white text-sm border border-gray-600 rounded px-2 py-1 outline-none cursor-pointer">
+                <option value="en" class="text-black">English</option>
+                <option value="ur" class="text-black">Urdu</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- Navbar -->
+    <nav class="flex flex-col md:flex-row justify-between items-center px-5 md:px-20 py-5 border-b border-gray-200">
+
+        <!-- Logo -->
+        <h1 class="text-2xl font-bold tracking-wider mb-4 md:mb-0">Exclusive</h1>
+
+        <!-- Menu Links -->
+        <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-10 text-base font-medium items-center">
+            <li class="border-b md:border-b-0 border-black cursor-pointer">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="hover:underline cursor-pointer text-gray-600">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li class="hover:underline cursor-pointer text-gray-600">
+                <a href="about.html">About</a>
+            </li>
+            <li class="hover:underline cursor-pointer text-gray-600">
+                <a href="signup.html">Sign Up</a>
+            </li>
+        </ul>
+
+        <!-- Search & Cart -->
+        <div
+            class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mt-4 md:mt-0 w-full md:w-auto">
+
+            <!-- Search Box -->
+            <div class="relative flex items-center bg-gray-100 px-3 py-2 rounded w-full md:w-60">
+                <input type="text" placeholder="What are you looking for?"
+                    class="bg-transparent text-sm outline-none w-full">
+                <img src="images/Component 2 (1).png" alt="wishlist" class="w-6 h-6 bg-gray-100 cursor-pointer ml-2">
+            </div>
+
+            <!-- Cart Icon -->
+            <div class="flex items-center">
+                <a href="wishlist.html">
+                    <img src="images/Frame 551.png" alt="cart" class="h-15 w-15 cursor-pointer">
+
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <section class="flex flex-col md:flex-row items-center justify-between py-20 pr-5 md:pr-20 gap-10">
+
+        <div class="w-full md:w-[55%] bg-[#CBE4E8] flex justify-center items-end pt-20">
+            <img src="images/dl.beatsnoop 1.png" alt="Shopping Cart and Phone"
+                class="w-full max-w-[600px] object-contain">
+        </div>
+
+        <div class="w-full md:w-[35%] px-10 md:px-0">
+            <div class="max-w-[400px] mx-auto md:mx-0">
+                <h2 class="text-3xl md:text-4xl font-medium tracking-wider mb-4">Create an account</h2>
+                <p class="text-base mb-10">Enter your details below</p>
+
+                <form class="flex flex-col gap-8">
+                    <input type="text" placeholder="Name"
+                        class="border-b border-gray-400 py-2 outline-none focus:border-black transition">
+
+                    <input type="text" placeholder="Email or Phone Number"
+                        class="border-b border-gray-400 py-2 outline-none focus:border-black transition">
+
+                    <input type="password" placeholder="Password"
+                        class="border-b border-gray-400 py-2 outline-none focus:border-black transition">
+
+                    <div class="flex flex-col gap-4 mt-4">
+                        <button type="submit"
+                            class="bg-[#DB4444] text-white py-4 rounded-sm font-medium hover:bg-[#c23b3b] transition">
+                            Create Account
+                        </button>
+
+                        <button type="button"
+                            class="border border-gray-400 py-4 rounded-sm font-medium flex items-center justify-center gap-4 hover:bg-gray-50 transition">
+                            <img src="images/Icon-Google.png" class="w-6" alt="Google">
+                            Sign up with Google
+                        </button>
+                    </div>
+                </form>
+
+                <div class="mt-8 text-center md:text-left text-gray-600">
+                    Already have account?
+                    <a href="login.html"
+                        class="text-black font-medium border-b border-gray-400 ml-4 pb-1 hover:text-[#DB4444] hover:border-[#DB4444] transition">
+                        Log in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="w-full bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-16">
+
+            <!-- Main Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+                <!-- Subscribe -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Exclusive</h3>
+                    <p class="mb-1">Subscribe</p>
+                    <p class="text-sm text-gray-400 mb-4">Get 10% off your first order</p>
+
+                    <!-- Input with arrow inside -->
+                    <div class="relative max-w-sm">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full bg-transparent border border-gray-600 rounded-lg px-4 py-2 pr-10 text-sm placeholder-gray-500 outline-none" />
+                        <button class="absolute right-3 top-1/2 -translate-y-1/2 text-lg hover:text-gray-300">
+                            ➤
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <p class="text-sm text-gray-400 mb-1">111 Bijoy sarani, Dhaka</p>
+                    <p class="text-sm text-gray-400 mb-1">DH 1515, Bangladesh</p>
+                    <p class="text-sm text-gray-400 mb-1">exclusive@gmail.com</p>
+                    <p class="text-sm text-gray-400">+88015-88888-9999</p>
+                </div>
+
+                <!-- Account -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Account</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="hover:text-white cursor-pointer"> <a href="account.html"> My Account </a> </li>
+                        <li class="hover:text-white cursor-pointer"> <a href="login.html"> Login / Register </a> </li>
+                        <li class="hover:text-white cursor-pointer"> <a href="cart.html"> Cart</a> </li>
+                        <li class="hover:text-white cursor-pointer"> <a href="wishlist.html"> Wishlist</a> </li>
+                        <li class="hover:text-white cursor-pointer"> <a href="#"> Shop</a> </li>
+                         <li class=" hover:text-white cursor-pointer ">  <a href="checkout.html"> Checkout</a> </li>
+
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Link</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="hover:text-white cursor-pointer">Privacy Policy</li>
+                        <li class="hover:text-white cursor-pointer">Terms Of Use</li>
+                        <li class="hover:text-white cursor-pointer">FAQ</li>
+                        <li class="hover:text-white cursor-pointer"> <a href="contact.html"> Contact</a></li>
+                        <li>
+                            <a href="404.html" class="text-blue-500 underline">
+                                Go to Error Page
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Download App -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Download App</h3>
+                    <p class="text-xs text-gray-400 mb-4">
+                        Save $3 with App New User Only
+                    </p>
+
+                    <!-- QR + Store buttons -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 mb-6">
+
+                        <!-- QR -->
+                        <img src="images/Qr Code.png" class="w-24 h-24 object-contain" alt="QR Code" />
+
+                        <!-- Store Buttons -->
+                        <div class="flex flex-col gap-2">
+                            <img src="images/GooglePlay.png" class="h-10 w-auto object-contain" alt="Google Play" />
+                            <img src="images/download-appstore.png" class="h-10 w-auto object-contain"
+                                alt="App Store" />
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="flex items-center gap-4">
+                        <a href="https://www.facebook.com">
+                            <img src="images/Icon-Facebook.png" class="w-5 h-5" alt="Facebook">
+                        </a>
+
+                        <a href="https://www.twitter.com">
+                            <img src="images/Group.png" class="w-6 h-6" alt="Twitter">
+                        </a>
+
+                        <a href="https://www.instagram.com">
+                            <img src="images/Group (1).png" class="w-5 h-5" alt="Instagram">
+                        </a>
+
+                        <a href="https://www.linkedin.com">
+                            <img src="images/Icon-Linkedin.png" class="w-6 h-6" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 mt-12 pt-6 text-center text-xs sm:text-sm text-gray-500">
+                © Copyright Exclusive 2026. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
